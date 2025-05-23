@@ -50,12 +50,27 @@
       margin-top: 2em;
       border-radius: 10px;
     }
-    .portrait {
-  max-width: 70%;
-  display: block;
-  margin: 20px auto;
+    .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1 1 50%;
+}
+
+.about-photo {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about-photo img {
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
   </style>
 </head>
@@ -65,9 +80,10 @@
     <p>Оздоровительный массаж без непотребств</p>
   </header>
 
-  <section>
+  <section class="about">
+  <div class="about-container">
+    <div class="about-text">
     <h2>Обо мне</h2>
-    <img src="tatyana.jpg" alt="Татьяна массажист" class="portrait">
     <p>
       Пpивeт! Меня зовут Tаня, я сертифицировaнный спeциалиcт пo массaжу.
       Большую чаcть cвoeгo времени мы проживаем голoвoй, в котopой движeтcя
@@ -81,6 +97,12 @@
     <p>
       Уже после одного сеанса наступает облегчение, настроение улучшается, а сон становится крепким и здоровым!
     </p>
+      </div>
+    <div class="about-photo">
+      <img src="tatyana.jpg" alt="Татьяна массажист">
+    </div>
+  </div>
+</section>
     <img src="01e83e6a-ce9e-45fe-85af-74f0ce5049b5.png" alt="Кабинет массажа">
     <img src="053f0520-2d5f-4b42-aaed-01a16ce0aa02.png" alt="Уютная обстановка и чай">
   </section>
