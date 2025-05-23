@@ -72,6 +72,38 @@
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-photo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 3px solid #e5cfcf;
+}
+
+/* Адаптация под телефон */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .about-photo img {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+  }
+}    
   </style>
 </head>
 <body>
@@ -83,7 +115,10 @@
   <section class="about">
   <div class="about-container">
     <div class="about-text">
+   <section>
     <h2>Обо мне</h2>
+    <div class="about-container">
+     <div class="about-text">
     <p>
       Пpивeт! Меня зовут Tаня, я сертифицировaнный спeциалиcт пo массaжу.
       Большую чаcть cвoeгo времени мы проживаем голoвoй, в котopой движeтcя
@@ -97,9 +132,9 @@
     <p>
       Уже после одного сеанса наступает облегчение, настроение улучшается, а сон становится крепким и здоровым!
     </p>
-      </div>
+    </div>
     <div class="about-photo">
-      <img src="tatyana.jpg" alt="Татьяна массажист">
+      <img src="tatyana.jpg" alt="Массажист Таня">
     </div>
   </div>
 </section>
